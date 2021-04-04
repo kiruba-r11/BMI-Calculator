@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/getInputFragment">
+
+    <fragment
+        android:id="@+id/getInputFragment"
+        android:name="com.example.bmicalculator.NavigationFragments.GetInputFragment"
+        android:label="fragment_get_input"
+        tools:layout="@layout/fragment_get_input" >
+        <action
+            android:id="@+id/action_getInputFragment_to_displayOutputFragment"
+            app:destination="@id/displayOutputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayOutputFragment"
+        android:name="com.example.bmicalculator.NavigationFragments.DisplayOutputFragment"
+        android:label="fragment_display_output"
+        tools:layout="@layout/fragment_display_output" />
+</navigation>
